@@ -1,0 +1,10 @@
+version: '3.8'
+services:
+  postgres:
+    image: 'bitnami/postgresql:latest'
+    environment:
+      - POSTGRES_USER=docker
+      - POSTGRES_PASSWORD=docker
+      - POSTGRES_DB=platinum_log_db
+    ports:
+      - '5432:5432'
